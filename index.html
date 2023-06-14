@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRECIOUS PORTFOLIO</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+
+<body>
+    <main>
+        <div class="headerCl">
+            <div class="headBg">
+                <div class="nav-bg">
+                    @precious
+                    <nav>
+                        <a href="#home">HOME</a>
+                        <a href="#project">PROJECT</a>
+                        <a href="#skill">SKILLS</a>
+                        <a href="#about">ABOUT</a>
+                        <a href="#contact">CONTACT</a>
+                    </nav>
+                </div>
+                <article id="home">
+                    <div class="container-header">
+                        <section class="header">
+                            <p>hello!</p>
+                            <p>I'm Precious</p>
+                            <P class="subhead">BEGINNER IN <br> FRONTEND DEVELOPER</P>
+                        </section>
+                        <button>EXPLORE</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <article id="skill">
+            <P>SKILLS</P>
+            <div class="container">
+                <figure>
+                    <img src="pngwing.com (2).png" alt="">
+                    <figcaption>HTML</figcaption>
+                    <a href="https://www.w3schools.com/html/default.asp"> <button>LEARN MORE</button></a>
+                </figure>
+                <figure>
+                    <img src="pngwing.com (1).png" alt="">
+                    <figcaption>CSS</figcaption>
+                    <a href="https://www.w3schools.com/css/default.asp"> <button>LEARN MORE</button></a>
+                </figure>
+                <figure>
+                    <img src="pngwing.com (3).png" alt="">
+                    <figcaption>JAVASCRIPT</figcaption>
+                    <a href="https://www.w3schools.com/js/default.asp"> <button>LEARN MORE</button></a>
+                </figure>
+            </div>
+        </article>
+        <article id="project">
+            <p class="project-head">MY PROJECTS</p>
+            <div class="project">
+                <img src="images (2).jpeg" alt="">
+                <img src="images (1).jpeg" alt="">
+                <img src="images (3).jpeg" alt="">
+                <img src="images (4).jpeg" alt="">
+                <img src="images (5).jpeg" alt="">
+                <img src="images (6).jpeg" alt="">
+                <img src="images (7).jpeg" alt="">
+                <img src="images.jpeg" alt="">
+            </div>
+        </article>
+        <div class="bg">
+            <article id="about" class="about">
+                <p>ABOUT</p>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi id rem aperiam
+                    suscipit animi voluptates cumque beatae dolorem dignissimos saepe tempore nemo. Enim ducimus
+                    ea et
+                    nam perspiciatis itaque quam voluptas suscipit at molestiae quos assumenda dolorem libero delectus,
+                    magni architecto tempore quae neque.
+                </P>
+            </article>
+        </div>
+    </main>
+    <article id="contact" class="footer">
+        <h2>CONTACT US ON</h2>
+        <section class="contact">
+            <div class="message">
+
+                <input type="text" id="txt1" placeholder=" Name"><br>
+                <input type="email" id="txt2" placeholder=" Email"><br>
+                <input type="text" id="txt3" placeholder="Subject"><br>
+                <textarea name="" id="txt4" cols="40" rows="8" placeholder="input message...."></textarea><br>
+                <button onclick="mybutton()">SEND MESSAGE</button><br>
+            </div>
+            <p>Get in touch and let's make something great together. Let's turn your idea on an even greater
+                product.</p>
+            <div class="mail">
+                <p> ✉
+                    info@gmail.com <br> <br> ☏
+                    <br>+234 123 456
+                <p>
+
+            </div>
+        </section>
+    </article>
+    </main>
+    <p style="text-align: center;">Report an issue | Blog | Privacy | Terms | 🌐 | © 2023 <br>Designed By Anonymous</p>
+
+
+
+
+    <script>
+        let box1 = document.getElementById('txt1')
+        let box2 = document.getElementById('txt2')
+        let box3 = document.getElementById('txt3')
+        let box4 = document.getElementById('txt4')
+
+        function mybutton(){
+            if(box1.value  ==="" && box2.value ==="" && box3.value ==="" && box4==="") {alert('input text to send message')}
+            else if(box1.value  !=="" && box2.value ==="" && box3.value ==="" && box4.value ===""){alert('fill the blank space')}
+            else if(box1.value  ==="" && box2.value !=="" && box3.value ==="" && box4.value ===""){alert('fill the blank space')}
+            else if(box1.value  ==="" && box2.value ==="" && box3.value !=="" && box4.value ===""){alert('fill the blank space')}
+            else if(box1.value  ==="" && box2.value ==="" && box3.value ==="" && box4.value !==""){alert('fill the blank space')}
+
+            else if(box1.value  !=="" && box2.value !=="" && box3.value ==="" && box4.value ===""){alert('fill the blank space')}
+            else if(box1.value  ==="" && box2.value !=="" && box3.value !=="" && box4.value ===""){alert('fill the blank space')}
+            else if(box1.value  ==="" && box2.value ==="" && box3.value !=="" && box4.value !==""){alert('fill the blank space')}
+            else if(box1.value  !=="" && box2.value ==="" && box3.value !=="" && box4.value ===""){alert('fill the blank space')}
+            else if(box1.value  ==="" && box2.value !=="" && box3.value ==="" && box4.value !==""){alert('fill the blank space')}
+            else if(box1.value  !=="" && box2.value ==="" && box3.value ==="" && box4.value !==""){alert('fill the blank space')}
+           
+
+            else if(box1.value ==="" && box2.value !=="" && box3.value !== "" && box4.value !==""){alert('input your name')}
+            else if(box1.value !=="" && box2.value ==="" && box3.value !== "" && box4.value !==""){alert('input your email')}
+            else if(box1.value !=="" && box2.value !=="" && box3.value === "" && box4.value !==""){alert('input subject')}
+            else if(box1.value !=="" && box2.value !=="" && box3.value !== "" && box4.value ===""){alert('input message')}
+            else if(box1.value !=="" && box2.value !=="" && box3.value !== "" && box4.value !==""){location.replace('signup.html')}
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+div{
+    height: 200px;
+    width: 200px;
+    border: solid green;
+    position: relative;
+    background-color: blue;
+    animation: move 5s;
+    animation-play-state: running;
+}
+@keyframes move {
+    from{left:0px;}
+    to{left:200px;}
+    
+}

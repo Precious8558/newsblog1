@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+
+</head>
+<body>
+    <div></div>
+    <input type="text" id="txt1" placeholder=" Name" ><br>
+    <input type="email" id="txt2" placeholder=" Email" ><br>
+    <input type="text" id="txt3" placeholder="Subject" ><br>
+    <textarea name="" id="txt4" cols="40" rows="8" placeholder="input message...." ></textarea><br>
+    <button onclick="mybutton()">SEND MESSAGE</button>
+
+    <script>
+        let box1 = document.getElementById('txt1')
+        let box2 = document.getElementById('txt2')
+        let box3 = document.getElementById('txt3')
+        let box4 = document.getElementById('txt4')
+        
+        function mybutton(){
+            if(box1.value  ==="" && box2.value ==="" && box3.value ==="" && box4==="") {alert('input something to send message')}
+            else if(box1.value  !=="" && box2.value ==="" && box3.value ==="" && box4.value ===""){alert('fill the blank space')}
+            else if(box1.value  ==="" && box2.value !=="" && box3.value ==="" && box4.value ===""){alert('fill the blank space')}
+            else if(box1.value  ==="" && box2.value ==="" && box3.value !=="" && box4.value ===""){alert('fill the blank space')}
+            else if(box1.value  ==="" && box2.value ==="" && box3.value ==="" && box4.value !==""){alert('fill the blank space')}
+            else if(box1.value ==="" && box2.value !=="" && box3.value !== "" && box4.value !==""){alert('input your name')}
+            else if(box1.value !=="" && box2.value ==="" && box3.value !== "" && box4.value !==""){alert('input your email')}
+            else if(box1.value !=="" && box2.value !=="" && box3.value === "" && box4.value !==""){alert('input subject')}
+            else if(box1.value !=="" && box2.value !=="" && box3.value !== "" && box4.value ===""){alert('input message')}
+            else if(box1.value !=="" && box2.value !=="" && box3.value !== "" && box4.value !==""){location.replace('signup.html')}
+            
+        }
+    </script>
+</body>
+</html>

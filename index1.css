@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+}
+
+main {
+    background-color: black;
+    
+}
+
+.headBg {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    height: 876px;
+}
+
+.headerCl {
+    background-image: url(water.jpg);
+    background-size: cover;
+}
+
+nav {
+    text-align: end;
+
+}
+
+.nav-bg {
+    position: sticky;
+    backdrop-filter: blur(10px);
+    height: 60px;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+.header {
+    margin-top: 100px;
+}
+
+.header p {
+    text-align: center;
+    margin: 0;
+}
+
+.header p:first-child {
+    font-size: 3em;
+    animation: move 5s;
+    animation-play-state: running;
+}
+@keyframes move {
+    from{left:0px;}
+    to{left:200px;}
+    
+}
+
+.header p:nth-child(2) {
+    font-size: 7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 5px 5px rgb(94, 94, 94);
+}
+
+.header p:last-child {
+    font-size: 3em;
+    margin-top: 40px;
+}
+
+.container-header button {
+    height: 50px;
+    width: 150px;
+    border: solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 120px;
+    margin-left: 43%;
+}
+
+
+#skill p {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.container img {
+    width: 300px;
+}
+
+.container button {
+    border: none;
+    height: 35px;
+    width: 150px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    background-color: orange;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.container button:hover {
+    opacity: 0.7;
+}
+
+.container button:active {
+    opacity: 0.3;
+}
+
+figure {
+    align-items: center;
+    justify-content: center;
+}
+
+.project-head {
+    font-size: 4em;
+    text-align: center;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 51vh 51vh 51vh auto;
+    grid-template-rows: 32vh auto;
+    justify-content: center;
+}
+
+.project img {
+    width: 320px;
+    height: 200px;
+    transition: 0.5s;
+
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1300px) {
+    .project {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+.about {
+    background-color: rgba(0, 0, 0, 0.555);
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+.bg {
+
+    background-image: url(minimalism_blot_spiral_60021_1366x768.jpg);
+
+}
+
+.about p:first-child {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 80px;
+}
+
+.about p:last-child {
+    text-align: center;
+    font-size: 1.8em;
+    width: 60%;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:900px) {
+    .about {
+        height: 600px;
+
+    }
+}
+
+@media (max-width:750px) {
+    .about {
+        height: 400%;
+    }
+}
+
+.message {
+    margin: 5px;
+    margin-top: 70px;
+
+}
+.message button{
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    border-color: white;
+    color: white;
+}
+
+input {
+    margin-bottom: 5px;
+    border-radius: 7px;
+    height: 25px;
+    background-color: #80808000;
+    border-color: black;
+    color: #ffffff;
+}
+textarea{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: black;
+    color: #ffffff;
+}
+
+.contact p {
+    font-size: 2em;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.mail p {
+    margin-right: auto;
+}
+
+.footer{
+   justify-content: center;
+
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+     width: 70%;
+   
+     margin-left: auto;
+     margin-right: auto;
+}
